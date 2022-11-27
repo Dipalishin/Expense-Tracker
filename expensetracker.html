@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Expense Tracker</title>
+  <script src="expense.js"></script>
+  <link rel="stylesheet" hrf="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section>
+    <form class="container" onsubmit="saveTolocalStorage(event)">
+      <h1>Expence tracker</h1>
+        <label>Choose Expense Amount</label>
+        <input type="text" id="amount" name="amount">
+       <label>Choose Description</label>
+        <input type="text" id="descript" name="descript">
+        <label for="category">Choose a category</label>
+        <select id="category" name="category">
+          <option value="movie">Movie</option>
+          <option value="food">Food</option>
+          <option value="fuel">Fuel</option>
+
+        </select>
+      
+  
+    <button class="btn">Add Expense</button>
+    </form>
+
+    <ul id="users"></ul>
+    <ul id="listOfUsers">
+
+    </ul>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+</body>
+
+</html>
